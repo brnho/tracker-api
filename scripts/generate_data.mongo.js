@@ -1,5 +1,6 @@
 const { MongoClient } = require('mongodb');
-const url = 'mongodb://localhost/issuetracker';
+//const url = 'mongodb://localhost/issuetracker';
+const url = 'mongodb+srv://brian:CtA00CPWEjc4GTz0@cluster0-n6xfz.mongodb.net/test?retryWrites=true&w=majority';
 
 async function populate() {
 	const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
